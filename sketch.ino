@@ -43,7 +43,7 @@ uint8_t dot[] = {
 };
 
 void setup() {
-  // put your setup code here, to run once:
+  
 
   pinMode(buzzer, OUTPUT);
   pinMode(pirSensor, INPUT);
@@ -64,7 +64,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
   var = digitalRead(pirSensor);   // read sensor value
   if (var == HIGH) {           // check if the sensor is HIGH (When object is detected)
     digitalWrite(red, HIGH);   // turn LED ON
